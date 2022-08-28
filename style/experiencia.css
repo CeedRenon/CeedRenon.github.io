@@ -1,0 +1,171 @@
+.experiencia {
+  max-width: 1250px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  background: white;
+}
+
+.experiencia .subtitle {
+  color: #e0e0e0;
+}
+
+.experiencia-info-text {
+  font-size: 1.5rem;
+  max-width: 40ch;
+  margin-bottom: 60px;
+  color: #525252;
+  line-height: 1.3;
+}
+
+.experiencia-info-text strong {
+  color: #141414;
+}
+
+.experiencia-list {
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  background: #f5f5f5;
+}
+
+.experiencia-list::before {
+  content: "";
+  width: 4px;
+  height: 20px;
+  position: absolute;
+  display: block;
+  background: linear-gradient(#b6f829,#67dd0a);
+  top: 20px;
+  left: -4px;
+}
+
+.experiencia-year {
+  position: absolute;
+  top: 22px;
+  left: -100px;
+  text-align: right;
+  width: 80px;
+  color: #525252;
+  font-size: .875rem;
+}
+
+.experiencia-list-title {
+  font-weight: bold;
+  color: #141414;
+  font-size: 1.17rem;
+}
+
+.experiencia-list-text {
+  font-size: .875rem;
+  color: #525252;
+  line-height: 1.3;
+}
+
+#secondtitle {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.experiencia-list-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: start;
+}
+
+.experiencia-list-skills li {
+  padding: 5px 10px;
+  background: white;
+  line-height: 1.4;
+  border-radius: 4px;
+}
+
+@media (max-width: 1000px) {
+  .experiencia .subtitle {
+    font-size: 7rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .experiencia .subtitle {
+    font-size: 6rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .experiencia {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .experiencia .subtitle {
+    text-align: none;
+    max-width: none;
+    color: #141414;
+    font-size: 3rem;
+  }
+
+  .experiencia-info {
+    display: grid;
+  }
+
+  .experiencia-info-text {
+    max-width: 50ch;
+    text-align: center;
+    font-size: 1.125rem;
+    justify-self: center;
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .experiencia {
+    gap: 30px;
+  }
+
+
+  .experiencia-info-text {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .experiencia .subtitle {
+    font-size: 3rem;
+    color: #141414;
+    text-transform: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .experiencia-list {
+    grid-template-columns: 1fr;
+  }
+
+  #secondtitle {
+    grid-column: 1;
+  }
+
+  .experiencia-year {
+    text-align: left;
+    position: relative;
+    color: #525252;
+    top: 0px;
+    width: auto;
+    left: 0px;
+    font-size: .875rem;
+    grid-row: 5;
+  }
+
+}
